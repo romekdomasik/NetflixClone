@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dbu-dg-c4l">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Tout nouveau-->
         <scene sceneID="V1t-AB-Ph3">
             <objects>
                 <viewController id="vIC-KO-iUD" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="d8N-0Y-SUr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="33L-fK-5W9"/>
+                    <navigationItem key="navigationItem" title="Tout nouveau" id="9OA-pZ-rTH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhQ-2z-duB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40" y="306"/>
+            <point key="canvasLocation" x="-880" y="1586"/>
         </scene>
-        <!--Item 1-->
+        <!--Mon Netflix-->
         <scene sceneID="bNd-qf-5jW">
             <objects>
                 <viewController id="b1v-JO-lEB" sceneMemberID="viewController">
@@ -34,49 +34,189 @@
                         <viewLayoutGuide key="safeArea" id="bxR-Jo-aba"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="SHr-2i-WCp"/>
+                    <navigationItem key="navigationItem" title="Mon Netflix" id="pgk-0I-Jrc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sub-Wd-L4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40" y="-495"/>
+            <point key="canvasLocation" x="149" y="1586"/>
         </scene>
-        <!--View Controller-->
+        <!--Login ScreenVC-->
         <scene sceneID="gFJ-XL-OGd">
             <objects>
-                <viewController id="dbu-dg-c4l" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rPs-1e-Whi">
+                <viewController storyboardIdentifier="LoginScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dbu-dg-c4l" customClass="LoginScreenVC" customModule="NetflixCloneApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="rPs-1e-Whi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="178" translatesAutoresizingMaskIntoConstraints="NO" id="KA8-le-dI4">
+                                <rect key="frame" x="87" y="176.99999999999997" width="218" height="499.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Qui est-ce ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKh-cl-js1">
+                                        <rect key="frame" x="43.666666666666657" y="0.0" width="131" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="RAh-ld-ta3">
+                                        <rect key="frame" x="0.0" y="207.99999999999997" width="218" height="291.33333333333326"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmi-5u-jDP">
+                                                <rect key="frame" x="0.0" y="0.0" width="218" height="241"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="218" id="Dzi-vu-V0m"/>
+                                                    <constraint firstAttribute="height" constant="241" id="wsb-dj-erB"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="profil" imagePlacement="bottom">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default" weight="thin"/>
+                                                    <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pressBtn" destination="dbu-dg-c4l" eventType="touchUpInside" id="Nu4-HP-8Vh"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="John" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARH-ej-X1Z">
+                                                <rect key="frame" x="80" y="259" width="58" height="32.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Netflix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1d-0H-6w4">
+                                <rect key="frame" x="126" y="81" width="140" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aoJ-Tl-nPt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="KA8-le-dI4" firstAttribute="top" secondItem="aoJ-Tl-nPt" secondAttribute="top" constant="118" id="0CI-EP-EzY"/>
+                            <constraint firstItem="KA8-le-dI4" firstAttribute="top" secondItem="A1d-0H-6w4" secondAttribute="bottom" constant="35" id="3UK-gU-oFq"/>
+                            <constraint firstItem="aoJ-Tl-nPt" firstAttribute="trailing" secondItem="KA8-le-dI4" secondAttribute="trailing" constant="88" id="8nG-6L-K7x"/>
+                            <constraint firstItem="aoJ-Tl-nPt" firstAttribute="trailing" secondItem="A1d-0H-6w4" secondAttribute="trailing" constant="127" id="M5E-lJ-LCa"/>
+                            <constraint firstItem="A1d-0H-6w4" firstAttribute="leading" secondItem="aoJ-Tl-nPt" secondAttribute="leading" constant="126" id="Xus-JF-wsP"/>
+                            <constraint firstItem="aoJ-Tl-nPt" firstAttribute="bottom" secondItem="KA8-le-dI4" secondAttribute="bottom" constant="141.66999999999999" id="bBY-c3-tI2"/>
+                            <constraint firstItem="KA8-le-dI4" firstAttribute="leading" secondItem="aoJ-Tl-nPt" secondAttribute="leading" constant="87" id="i7k-9k-ycI"/>
+                            <constraint firstItem="A1d-0H-6w4" firstAttribute="top" secondItem="aoJ-Tl-nPt" secondAttribute="top" constant="22" id="joO-QO-8I6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wfA-9S-pbq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1854" y="-171"/>
+            <point key="canvasLocation" x="-866.41221374045801" y="-977.46478873239437"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar Custom-->
         <scene sceneID="sCp-yT-Lsg">
             <objects>
-                <tabBarController id="ESB-d2-frQ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarCustom" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ESB-d2-frQ" customClass="TabBarCustom" customModule="NetflixCloneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b5u-8e-0uY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="b1v-JO-lEB" kind="relationship" relationship="viewControllers" id="B3J-ke-tls"/>
-                        <segue destination="vIC-KO-iUD" kind="relationship" relationship="viewControllers" id="YTU-ST-8y2"/>
+                        <segue destination="yTU-Kq-xIZ" kind="relationship" relationship="viewControllers" id="B3J-ke-tls"/>
+                        <segue destination="c4w-DN-Hb0" kind="relationship" relationship="viewControllers" id="YTU-ST-8y2"/>
+                        <segue destination="8ny-QO-aCU" kind="relationship" relationship="viewControllers" id="khi-jo-bfT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4SB-4a-frT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-864" y="-171"/>
         </scene>
+        <!--Mon Netflix-->
+        <scene sceneID="jqe-8w-SR2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yTU-Kq-xIZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mon Netflix" image="person.crop.circle.fill" catalog="system" id="SHr-2i-WCp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Bls-8C-oAE">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b1v-JO-lEB" kind="relationship" relationship="rootViewController" id="3ZK-lu-tj2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jwD-8h-X4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="884"/>
+        </scene>
+        <!--Tout nouveau-->
+        <scene sceneID="sXx-E0-HJw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c4w-DN-Hb0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tout nouveau" selectedImage="movieclapper.fill" catalog="system" id="33L-fK-5W9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="6MH-Vd-5fJ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vIC-KO-iUD" kind="relationship" relationship="rootViewController" id="m4h-yI-ieG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbM-vU-Mdy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-880" y="884"/>
+        </scene>
+        <!--Pour John-->
+        <scene sceneID="HJ8-me-MQV">
+            <objects>
+                <viewController id="DZW-Jp-EcA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z2s-SO-PyR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qRQ-0U-2JH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pour John" id="SjZ-AD-gIH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFR-hY-toU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1883" y="1586"/>
+        </scene>
+        <!--Accueil-->
+        <scene sceneID="cC2-Xo-WSk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8ny-QO-aCU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Accueil" image="house.fill" catalog="system" id="ME9-oq-1Ce"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="WuA-4I-raG">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DZW-Jp-EcA" kind="relationship" relationship="rootViewController" id="70r-OJ-kJU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l72-c4-qlf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1883" y="885"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="movieclapper.fill" catalog="system" width="128" height="113"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="profil" width="180" height="180"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

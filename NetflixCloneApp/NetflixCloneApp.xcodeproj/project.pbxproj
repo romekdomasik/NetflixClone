@@ -13,6 +13,7 @@
 		42C0A5912B5EC8B900B6316A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42C0A5902B5EC8B900B6316A /* Assets.xcassets */; };
 		42C0A5942B5EC8B900B6316A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C0A5922B5EC8B900B6316A /* LaunchScreen.storyboard */; };
 		42C0A59C2B5ED35500B6316A /* LoginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0A59B2B5ED35500B6316A /* LoginScreenVC.swift */; };
+		42C0A59F2B5F061500B6316A /* TabBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0A59E2B5F061500B6316A /* TabBarCustom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		42C0A5932B5EC8B900B6316A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42C0A5952B5EC8B900B6316A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42C0A59B2B5ED35500B6316A /* LoginScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenVC.swift; sourceTree = "<group>"; };
+		42C0A59E2B5F061500B6316A /* TabBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		42C0A5862B5EC8B600B6316A /* NetflixCloneApp */ = {
 			isa = PBXGroup;
 			children = (
+				42C0A59D2B5ED5F100B6316A /* View controllers */,
 				42C0A5872B5EC8B600B6316A /* AppDelegate.swift */,
 				42C0A5892B5EC8B600B6316A /* SceneDelegate.swift */,
 				42C0A58D2B5EC8B600B6316A /* Main.storyboard */,
-				42C0A59B2B5ED35500B6316A /* LoginScreenVC.swift */,
+				42C0A59E2B5F061500B6316A /* TabBarCustom.swift */,
 				42C0A5902B5EC8B900B6316A /* Assets.xcassets */,
 				42C0A5922B5EC8B900B6316A /* LaunchScreen.storyboard */,
 				42C0A5952B5EC8B900B6316A /* Info.plist */,
 			);
 			path = NetflixCloneApp;
+			sourceTree = "<group>";
+		};
+		42C0A59D2B5ED5F100B6316A /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42C0A59B2B5ED35500B6316A /* LoginScreenVC.swift */,
+			);
+			path = "View controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C0A59F2B5F061500B6316A /* TabBarCustom.swift in Sources */,
 				42C0A59C2B5ED35500B6316A /* LoginScreenVC.swift in Sources */,
 				42C0A5882B5EC8B600B6316A /* AppDelegate.swift in Sources */,
 				42C0A58A2B5EC8B600B6316A /* SceneDelegate.swift in Sources */,
